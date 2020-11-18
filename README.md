@@ -14,7 +14,7 @@ Any suggestions for improvements or features are welcome!
   - players have permission to use this command by default, no wait x seconds without moving
 - tpdeny command
   - denies 
-  - players have permission to use this command by default
+  - players have permission to use this comma
 - tpview command
   - prints current te
   - players have permission to use this command by default
