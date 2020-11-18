@@ -13,10 +13,10 @@ Any suggestions for improvements or features are welcome!
   - accept current teleport request, teleports immediately
   - players have permission to use this command by default, no wait x seconds without moving
 - tpdeny command
-  - denies request
-  - players have permission to use this command by defau
+  - denies
+  - players have permission to use this comma
 - tpview command
-  - prints current teleport request
+  - prints current te
   - players have permission to use this command by default
 - tpback command
   - teleports you back to where you were before the last teleport you accept
@@ -31,3 +31,4 @@ Any suggestions for improvements or features are welcome!
 - [x] write this readme
 - [ ] comment my code
 - [x] error handling
+yeet
