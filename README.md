@@ -31,3 +31,4 @@ Any suggestions for improvements or features are welcome!
 - [x] write this readme
 - [ ] comment my code
 - [x] error handling
+yeet
