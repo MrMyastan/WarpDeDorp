@@ -14,7 +14,7 @@ Any suggestions for improvements or features are welcome!
   - players have permission to use this command by default, no wait x seconds without moving
 - tpdeny command
   - denies request
-  - players have permission to use this command by default
+  - players have permission to use this command by defau
 - tpview command
   - prints current teleport request
   - players have permission to use this command by default
