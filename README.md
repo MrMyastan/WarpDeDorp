@@ -13,7 +13,7 @@ Any suggestions for improvements or features are welcome!
   - accept current teleport request, teleports immediately
   - players have permission to use this command by default, no wait x seconds without moving
 - tpdeny command
-  - denies 
+  - denies
   - players have permission to use this comma
 - tpview command
   - prints current te
