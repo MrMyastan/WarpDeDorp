@@ -1,0 +1,12 @@
+name: WarpDeDorp
+main: games.skweekychair.warpdedorp.WarpDDPlugin
+version: 1.0
+api-version: 1.16
+commands:
+   warp:
+      description: warp 2 location
+      usage: /<command> [location]
+      permission: warpdedorp.warp
+permissions:
+   warpdedorp.warp:
+      default: true
