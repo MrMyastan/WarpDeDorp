@@ -19,7 +19,7 @@ Any suggestions for improvements or features are welcome!
   - prints current te
   - players have permission to use this command by default
 - tpback command
-  - teleports you back to where you were before the last teleport you accept
+  - teleports you back to where you were before the last teleport you accept REET
   - players have permission to use this command by default
 # Things to note
 - teleport requests dont have any queueing, a new request overwrites a previous
