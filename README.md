@@ -4,7 +4,7 @@ You can feel free to modify the code for your own use (just make sure to credit 
 Any suggestions for improvements or features are welcome!
 # Features
 - tprequest command
-  - request to teleport to player
+  - request to teleport to player YEET
   - players have permission to use this command by
 - tphere command
   - request a player teleports to you
