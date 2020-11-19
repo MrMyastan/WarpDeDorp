@@ -7,7 +7,7 @@ Any suggestions for improvements or features are welcome!
   - request to teleport to player YEET
   - players have permission to use this command by
 - tphere command
-  - request a player teleports to you
+  - request a player teleports to you HEYYY
   - players have permission to use this command by default
 - tpaccept command
   - accept current teleport request, teleports immediately
