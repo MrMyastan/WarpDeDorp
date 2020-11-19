@@ -5,7 +5,7 @@ Any suggestions for improvements or features are welcome!
 # Features
 - tprequest command
   - request to teleport to player
-  - players have permission to use this command by de
+  - players have permission to use this command by
 - tphere command
   - request a player teleports to you
   - players have permission to use this command by default
