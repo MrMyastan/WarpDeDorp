@@ -7,6 +7,12 @@ commands:
       description: warp 2 location
       usage: /<command> [location]
       permission: warpdedorp.warp
+   addwarp:
+      description: add a warp location
+      usage: /<command> [name]
+      permission: warpdedorp.addwarp
 permissions:
    warpdedorp.warp:
+      default: true
+   warpdedorp.addwarp:
       default: true
