@@ -41,7 +41,7 @@ public class CommandWarp implements TabExecutor {
 		List<String> names = new ArrayList<String>();
 		if (args.length > 1) {return names;}
 		Set<String> namesSet = teleportLocations.keySet();
-		names = new ArrayList<String>(namesSet);
+		names.addAll(namesSet);
 		return names;
 	}
 	
