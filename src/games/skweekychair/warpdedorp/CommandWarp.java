@@ -19,9 +19,16 @@ public class CommandWarp implements CommandExecutor {
 	// This method is called, when somebody uses our command
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+    	if (args.length == 0) {return false;}
+    	
     	if (sender instanceof Player) {
             Player player = (Player) sender;
+            Location toLocation = teleportLocations.get(args[0]);
+            if (toLocation == null) {
+            	return false;
+            }
             player.teleport(teleportLocations.get(args[0]));
+            return true;
         }
     	return false;
     }
