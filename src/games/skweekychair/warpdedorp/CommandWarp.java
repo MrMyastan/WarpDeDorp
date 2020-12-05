@@ -1,14 +1,17 @@
 package games.skweekychair.warpdedorp;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Set;
 
 import org.bukkit.Location;
 import org.bukkit.command.Command;
-import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+import org.bukkit.command.TabExecutor;
 import org.bukkit.entity.Player;
 
-public class CommandWarp implements CommandExecutor {
+public class CommandWarp implements TabExecutor {
     
 	HashMap<String, Location> teleportLocations;
 	
@@ -32,4 +35,15 @@ public class CommandWarp implements CommandExecutor {
         }
     	return false;
     }
+    
+	@Override
+	public List<String> onTabComplete(CommandSender sender, Command command, String alias, String[] args) {
+		List<String> names = new ArrayList<String>();
+		if (args.length > 1) {return names;}
+		Set<String> namesSet = teleportLocations.keySet();
+		names = new ArrayList<String>(namesSet);
+		return names;
+	}
+	
+
 }
