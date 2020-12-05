@@ -15,10 +15,11 @@ public class WarpDDPlugin extends JavaPlugin {
     	saveDefaultConfig();
         this.getCommand("warp").setExecutor(new CommandWarp(teleportLocations));
         this.getCommand("addwarp").setExecutor(new CommandAddWarp(this));
+        this.getCommand("delwarp").setExecutor(new CommandDelWarp(this));
     }
     // Fired when plugin is disabled
     @Override
     public void onDisable() {
-
+    	saveConfig();
     }
 }

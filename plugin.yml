@@ -11,8 +11,14 @@ commands:
       description: add a warp location
       usage: /<command> [name]
       permission: warpdedorp.addwarp
+   delwarp:
+      description: remove warp point
+      usage: /<command> [name]
+      permission: warpdedorp.delwarp
 permissions:
    warpdedorp.warp:
       default: true
    warpdedorp.addwarp:
+      default: true
+   warpdedorp.delwarp:
       default: true
