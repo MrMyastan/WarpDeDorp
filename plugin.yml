@@ -9,7 +9,7 @@ commands:
       permission: warpdedorp.warp
    addwarp:
       description: add a warp location
-      usage: /<command> [name]
+      usage: /<command> [name] (worldname xcord ycord zcord) (yaw pitch)
       permission: warpdedorp.addwarp
    delwarp:
       description: remove warp point
