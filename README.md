@@ -8,11 +8,10 @@ Any suggestions for improvements or features are welcome!
   - players have permission to use this command by default
 - addwarp command
   - add a warp point
-  - currently for testing players have permission to use by default, they wont eventually
+  - players DO NOT have permission to use this command by default
 - delwarp command
   - removes a warp point
-  - currently for testing players have permission to use by default, they wont eventually
+  - players DO NOT have permission to use this command by default
 # To-Do
 - [x] write this readme
 - [ ] comment my code
-- [x] implement addwarp
