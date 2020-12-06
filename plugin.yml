@@ -5,7 +5,7 @@ api-version: 1.16
 commands:
    warp:
       description: warp 2 location
-      usage: /<command> [location]
+      usage: /<command> [name]
       permission: warpdedorp.warp
    addwarp:
       description: add a warp location
