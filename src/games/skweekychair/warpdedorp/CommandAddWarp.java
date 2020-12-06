@@ -87,15 +87,15 @@ public class CommandAddWarp implements TabExecutor {
 				Location playerLoc = player.getLocation();
 				switch (args.length) {
 					case 3:
-						completes.add(String.valueOf(playerLoc.getX())); break;
+						completes.add(String.format("%.2f", playerLoc.getX())); break;
 					case 4:
-						completes.add(String.valueOf(playerLoc.getY())); break;
+						completes.add(String.format("%.2f", playerLoc.getY())); break;
 					case 5:
-						completes.add(String.valueOf(playerLoc.getZ())); break;
+						completes.add(String.format("%.2f", playerLoc.getZ())); break;
 					case 6:
-						completes.add(String.valueOf(playerLoc.getYaw())); break;
+						completes.add(String.format("%.2f", playerLoc.getYaw())); break;
 					case 7:
-						completes.add(String.valueOf(playerLoc.getPitch())); break;
+						completes.add(String.format("%.2f", playerLoc.getPitch())); break;
 				}
 					
 			}
