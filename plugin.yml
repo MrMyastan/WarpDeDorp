@@ -19,6 +19,6 @@ permissions:
    warpdedorp.warp:
       default: true
    warpdedorp.addwarp:
-      default: false
+      default: op
    warpdedorp.delwarp:
-      default: false
+      default: op
