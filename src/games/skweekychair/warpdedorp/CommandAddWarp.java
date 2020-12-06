@@ -1,14 +1,18 @@
 package games.skweekychair.warpdedorp;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.List;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.command.Command;
-import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+import org.bukkit.command.TabExecutor;
 import org.bukkit.entity.Player;
+import org.bukkit.util.StringUtil;
 
 public class CommandAddWarp implements TabExecutor {
 	 
@@ -64,5 +68,42 @@ public class CommandAddWarp implements TabExecutor {
 		mainInstance.saveConfig();
 		
 		return true;
+	}
+
+	@Override
+	public List<String> onTabComplete(CommandSender sender, Command command, String alias, String[] args) {
+		List<String> completes = new ArrayList<String>();
+		List<String> returns = new ArrayList<String>();
+		
+		if (args.length == 2) {
+			List<World> worlds = Bukkit.getWorlds();
+			for (World element : worlds) {
+				completes.add(element.getName());
+			}
+		}
+		else if (2 < args.length && args.length < 8 ) {
+			if (sender instanceof Player) {
+				Player player = (Player) sender;
+				Location playerLoc = player.getLocation();
+				switch (args.length) {
+					case 3:
+						completes.add(String.valueOf(playerLoc.getX())); break;
+					case 4:
+						completes.add(String.valueOf(playerLoc.getY())); break;
+					case 5:
+						completes.add(String.valueOf(playerLoc.getZ())); break;
+					case 6:
+						completes.add(String.valueOf(playerLoc.getYaw())); break;
+					case 7:
+						completes.add(String.valueOf(playerLoc.getPitch())); break;
+				}
+					
+			}
+		}
+		
+		StringUtil.copyPartialMatches(args[args.length - 1], completes, returns);
+		Collections.sort(returns);
+		
+		return returns;
 	}
 }
