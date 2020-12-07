@@ -29,10 +29,10 @@ public class CommandAddWarp implements TabExecutor {
 		if ((1 < args.length && args.length < 5) || args.length == 6) {return false;} 
 		
 		if (sender instanceof Player && args.length == 1) {
-	       	Player player = (Player) sender;
-	       	Location playerLoc = player.getLocation();
-	       	teleportLocations.put(args[0], playerLoc);
-	       	mainInstance.getConfig().set(args[0], playerLoc);
+			Player player = (Player) sender;
+			Location playerLoc = player.getLocation();
+			teleportLocations.put(args[0], playerLoc);
+			mainInstance.getConfig().set(args[0], playerLoc);
 			mainInstance.saveConfig();
 			return true;
 		}
@@ -63,8 +63,8 @@ public class CommandAddWarp implements TabExecutor {
 			warpPoint.setPitch(pitch);
 		}
 		
-       	teleportLocations.put(args[0], warpPoint);
-       	mainInstance.getConfig().set(args[0], warpPoint);
+		teleportLocations.put(args[0], warpPoint);
+		mainInstance.getConfig().set(args[0], warpPoint);
 		mainInstance.saveConfig();
 		
 		return true;

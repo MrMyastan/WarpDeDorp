@@ -25,8 +25,8 @@ public class CommandDelWarp implements TabExecutor {
 	@Override
 	public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 		if (args.length == 1 && teleportLocations.containsKey(args[0])) {
-	       	teleportLocations.remove(args[0]);
-	       	mainInstance.getConfig().set(args[0], null);
+			teleportLocations.remove(args[0]);
+			mainInstance.getConfig().set(args[0], null);
 			mainInstance.saveConfig();
 			return true;
 		}
