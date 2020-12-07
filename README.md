@@ -1,3 +1,4 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT) [![Tested on: Spigot 1.16.1](https://img.shields.io/badge/Tested%20on-Spigot%201.16.1-yellow.svg?logo=minecraft)](https://www.spigotmc.org/) [![Languag: Java](https://img.shields.io/badge/Language-Java-red?logo=java)](https://www.java.com/en/)
 # WarpDeDorp
 A basic Spigot-API Minecraft plugin for a warp system.
 You can feel free to modify the code for your own use (just make sure to credit me for my code), and use the plugin for your own server!
