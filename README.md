@@ -1,4 +1,4 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 # WarpDeDorp
 A basic Spigot-API Minecraft plugin for a warp system.
 You can feel free to modify the code for your own use (just make sure to credit me for my code), and use the plugin for your own server!
